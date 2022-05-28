@@ -1,0 +1,18 @@
+1c1,2
+< (test ft)
+---
+>
+> (test stl)
+33c34
+< Execution time (ms): 12.15ms
+---
+> Execution time (ms): 20.97ms
+53c54
+< Execution time (ms): 23.93ms
+---
+> Execution time (ms): 22.78ms
+85c86,87
+< Execution time (ms): 358.93ms
+---
+> Execution time (ms): 415.89ms
+>

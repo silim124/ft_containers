@@ -1,0 +1,87 @@
+(test ft)
+
+***** VECTOR TEST *****
+
+v1: the frogurt is also cursed 
+v2: the frogurt is also cursed 
+v3: the frogurt is also cursed 
+v3[1]: frogurt
+v3[2]: is
+v3 front: the
+v3 back: cursed
+it: the it: frogurt it: is it: also it: cursed 
+rvrIt: cursed rvrIt: also rvrIt: is rvrIt: frogurt rvrIt: the 
+v3 empty: false
+v3 size: 5
+v3 max_size: 768614336404564650
+v3 capacity: 5
+v3 clear
+v3 size: 0
+v3 insert (from v2)
+v3 size: 5
+v3: the frogurt is also cursed 
+erase first
+v3: the is also cursed 
+v3: the is also cursed foo bar kek 
+v3: the is also cursed foo bar 
+v3: the is also cursed 
+v3: newWord newWord 
+v3: the frogurt is also cursed 
+v3 == v2: false
+v3 < v2: false
+v3 >= v2: true
+Execution time (ms): 12.15ms
+
+
+***** STACK TEST *****
+
+Top element (st): 299997
+stack size (st): false
+Top element (st2): 299997
+stack size (st2): false
+stack empty (st2): false
+Top element (st2): 42
+stack size (st2): false
+st2 == st3: true
+Top element (st3): 42
+st2 == st3: false
+st2 != st3: true
+st2 < st3: false
+st2 >= st3: true
+Count of pop operations (st3): 99997
+stack empty (st3): true
+Execution time (ms): 23.93ms
+
+
+***** MAP TEST *****
+
+mp1: {anything:42 something:21 that thing:121 whatever:555 }
+mp2: {anything:42 something:21 that thing:121 whatever:555 }
+mp3: {anything:42 something:21 that thing:121 whatever:555 }
+mp3[anything] with []: 42
+mp3[non_existing] with []: 0
+{anything:42 non_existing:0 something:21 that thing:121 whatever:555 }
+{whatever:555 that thing:121 something:21 non_existing:0 anything:42 }
+mp3 empty: false
+mp3 size: 5
+mp3 clear
+mp3 size: 0
+mp3 insert (from mp2)
+mp3 size: 4
+mp3: {anything:42 something:21 that thing:121 whatever:555 }
+erase 'that_thing'
+erase 'non_existing'
+mp3: {anything:42 something:21 whatever:555 }
+mp3: {anything:42 something:21 that thing:121 whatever:555 }
+mp3 == mp2: false
+mp3 < mp2: true
+mp3 >= mp2: false
+count 41: 0
+count 50: 1
+count 300005: 0
+find 26: 26
+lower bound 127: 128
+upper bound 244: 246
+Execution time (ms): 358.93ms
+
+
